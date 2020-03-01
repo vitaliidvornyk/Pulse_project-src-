@@ -112,6 +112,16 @@
         &_main {
             margin-top: 40px;
         }
+        &_submit {
+            width: 250px;
+            height: 35px;
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 18px;
+        }
     }
 
     .promo {
@@ -157,11 +167,25 @@
         }
         &__subtitle {
             text-align: center;
+            line-height: 20px;
+            &_mt {
+                margin-top: 58px;
+            }
         }
     }
 
     .consultation {
-        min-height: 600px;
+        min-height: 470px;
+        padding: 50px 0 70px 0;
+        &__descr {
+            font-size: 12px;
+        }
+        .feed-form {
+            width: 250px;
+            input {
+                height: 35px;
+            }
+        }
     }
 
     .carousel {
@@ -172,6 +196,72 @@
         }
         &__inner {
             width: 100%;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            font-size: 14px;
+            height: 40px;
+            line-height: 38px;
+        }
+        .catalog-item {
+            padding: 10px 10px 10px 10px;
+            width: 255px;
+            margin-bottom: 0;
+            hr {
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            &__subtitle {
+                margin-top: 10px;
+            }
+            &__descr {
+                margin-top: 10px;
+            }
+            &__link {
+                margin-top: 13px;
+            }
+            &__price {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .feed {
+        &__img {
+            width: 100px;
+            height: 100px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+        &__item {
+            margin-top: 50px;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 313px;
+            height: 175px;
+        }
+        &__addr {
+            font-size: 12px;
+        }
+        &__phone {
+            font-size: 15px;
+            margin-bottom: 17px;
+        }
+        &__social-item {
+            width: 44px;
+            height: 44px;
+            img {
+                height: 25px;
+            }
         }
     }
 }
