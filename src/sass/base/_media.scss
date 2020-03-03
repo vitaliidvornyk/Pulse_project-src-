@@ -1,4 +1,57 @@
+@media (max-width: 1200px) {
+	.footer {
+		&__addr {
+			font-size: 18px;
+		}
+		&__phone {
+			font-size: 18px;
+		}
+		&__social-item {
+			width: 45px;
+			height: 45px;
+			img {
+				height: 20px;
+			}
+		}
+		&__info {
+			width: 360px;
+			height: 233px;
+			padding: 30px 30px 30px 30px;
+		}
+	}
+}
+
 @media (max-width: 991px) {
+
+	.overlay {
+		.modal {
+			padding: 23px 23px 23px 23px;
+			width: 320px;
+			min-height: 333px;
+			&__close {
+				right: -28px;
+				line-height: 23px;
+			}
+			&__subtitle {
+				width: 90%;
+				font-size: 19px;
+				margin: 0 auto;
+			}
+			&__descr {
+				margin: 10px auto 0 auto;
+				width: 90%;
+			}
+			.feed-form {
+				width: 90%;
+				margin: 15px auto 0 auto;	
+			}
+			.button {
+				&_submit {
+					width: 100%;
+				}
+			}
+		}
+	}
 
 	.button {
 		&_main {
@@ -81,15 +134,27 @@
 	.catalog {
 		&__content {
 			justify-content: space-evenly;
+			.catalog-item {
+				width: 335px;
+			}
+		}
+	}
+
+	.feed {
+		&__text {
+			margin-left: 40px;
+			padding-right: 0;
 		}
 	}
 
 	.footer {
 		height: 500px;
 		&__info {
-			width: 350px;
-			height: 200px;
-			padding: 20px 35px 20px 35px;
+			width: 320px;
+			height: 190px;
+			padding: 15px 35px 15px 35px;
+			left: 100%;
+			transform: translateX(-100%);
 		}
 		&__addr {
 			margin-bottom: 15px;
@@ -107,6 +172,8 @@
 }
 
 @media (max-width: 767px) {
+
+
 
 	.button {
 		&_main {
@@ -246,8 +313,12 @@
 
 	.footer {
 		&__info {
-			width: 313px;
-			height: 175px;
+			width: 250px;
+			height: 155px;
+			padding: 15px 15px 15px 15px;
+			left: 50%;
+			transform: translateX(-50%) translateY(-100%);
+			top: 100%;
 		}
 		&__addr {
 			font-size: 12px;
@@ -267,6 +338,33 @@
 }
 
 @media (max-width: 575px) {
+
+	.overlay {
+		.modal {
+			width: 255px;
+			min-height: 333px;
+			padding: 14px 14px 14px 14px;
+			&__subtitle {
+				font-size: 15px;
+			}
+			&__descr {
+				font-size: 13px;
+			}
+			&_mini {
+				width: 255px;
+			}
+			.feed-form {
+				input {
+					height: 35px;
+				}
+				button {
+					&_submit {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
 
 	.button {
 		&_main {
@@ -429,6 +527,10 @@
 				margin-top: 50px;
 			}
 		}
+		&__img {
+			width: 60px;
+			height: 60px;
+		}
 		&__text {
 			margin-left: 20px;
 			padding-right: 0;
@@ -443,7 +545,6 @@
 			width: 220px;
 			height: 130px;
 			padding: 14px 40px 56px 40px;
-			top: 70px;
 		}
 		&__addr {
 			margin: 0 auto;
